@@ -43,7 +43,7 @@ p {
 }
 
 /** Utility **/
-.text-primary{
+.text-primary {
     color: var(--light-blue);
 }
 
@@ -56,23 +56,52 @@ p {
     font-weight: 500;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--light-blue);
     color: #fff;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #135fa1;
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: var(--dark-gray);
     color: #fff
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: #4c4f6e;
 }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 32px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.title img {
+    margin: 20px 0;
+}
+
+.title p {
+    font-size: 16px;
+    margin: auto;
+    max-width: 500px;
+
+}
+
+
 
 /** Header start **/
 
@@ -130,7 +159,7 @@ p {
 #home .home-content .col small {
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: 1px ;
+    letter-spacing: 1px;
 }
 
 #home .home-content .col small img {
@@ -143,13 +172,67 @@ p {
     line-height: 1.4;
 }
 
-#home .home-content .col  p {
+#home .home-content .col p {
     padding: 10px 0 30px;
     max-width: 500px;
     line-height: 1.6;
 }
 
-#home .home-content .col  a {
+#home .home-content .col a {
     margin-right: 15px;
 }
+
 /** Header end **/
+/** About  start **/
+#about {
+    padding: 6rem 0;
+}
+
+#about .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    margin-top: 3rem;
+}
+
+#about .row .col h3 {
+    font-size: 25px;
+}
+
+#about .row .col hr {
+    width: 60px;
+    height: 3px;
+    background-color: var(--light-blue);
+    border: none;
+    margin: 10px 0;
+}
+
+#about .row .col p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+#about .row .col .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#about .row .col .list li {
+    columns: var(--light-gray);
+    margin-bottom: 5px;
+}
+
+#about .row .col .list li i {
+    color: var(--light-blue);
+    margin-right: 5px;
+}
+
+
+#about .row img {
+    width: 100%;
+}
+
+
+
+/** About end **/

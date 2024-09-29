@@ -56,6 +56,29 @@ p {
     font-weight: 500;
 }
 
+ .btn-third {
+    background-color: #fff;
+    color: var(--light-blue);
+    border: 1px solid #fff;
+ }
+
+ .btn-third:hover{
+    background-color: var(--light-blue);
+    color: #fff;
+ }
+
+
+ .btn-forth {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+ }
+
+ .btn-forth:hover  {
+    background-color: #fff;
+    color: var(--dark-gray);
+ }
+
 .btn-primary {
     background-color: var(--light-blue);
     color: #fff;
@@ -243,7 +266,7 @@ p {
     color: #fff;
 }
 
-#info::before {
+#info::before , #call::before {
     content: "";
     position: absolute;
     top: 0;
@@ -319,8 +342,6 @@ p {
     top: 40px;
 }
 
-
-
 #help .row .col i {
     font-size: 30px;
     padding: 25px;
@@ -333,7 +354,34 @@ p {
     margin: 20px 0;
 }
 
-
-
-
 /*** Help section end **/
+/*** Call section start **/
+#call {
+    background: url('./images/call-bg.jpg') no-repeat center center/cover;
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#call .call-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+#call .call-content h2 {
+    color: #fff;
+    font-size: 35px;
+
+}
+
+#call .call-content p {
+    color: #fff;
+    margin: 25px 0;
+}
+
+#call .call-content a {
+    margin-right: 20px;
+}
+
+/*** Call section end **/

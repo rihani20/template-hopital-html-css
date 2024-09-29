@@ -267,7 +267,7 @@ p {
     justify-content: center;
 }
 
-#info .row .col:hover i{
+#info .row .col:hover i {
 
     color: var(--light-blue);
     background-color: white;
@@ -292,3 +292,48 @@ p {
 }
 
 /** info section end **/
+/*** Help section start **/
+#help {
+    padding: 6rem 0;
+}
+
+#help .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#help .row .col {
+    position: relative;
+}
+
+#help .row .col:first-child:before,
+#help .row .col:nth-child(2):before {
+    content: "";
+    border-bottom: 4px dotted var(--light-blue);
+    position: absolute;
+    width: 118px;
+    right: -75px;
+    top: 40px;
+}
+
+
+
+#help .row .col i {
+    font-size: 30px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    color: var(--light-blue);
+}
+
+#help .row .col h3 {
+    margin: 20px 0;
+}
+
+
+
+
+/*** Help section end **/
